@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 900" role="img" aria-label="Placeholder bastidores">
+  <rect width="1600" height="900" fill="#1a1214"/>
+  <rect x="100" y="80" width="700" height="740" fill="#370d17" opacity="0.45"/>
+  <rect x="900" y="180" width="600" height="540" fill="#e5e2d3" opacity="0.05"/>
+</svg>

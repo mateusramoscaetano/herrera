@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 1000" role="img" aria-label="Placeholder detalhe">
+  <rect width="1000" height="1000" fill="#370d17"/>
+  <circle cx="500" cy="500" r="320" fill="#1a1214" opacity="0.55"/>
+  <circle cx="500" cy="500" r="120" fill="#c4b780" opacity="0.2"/>
+</svg>

@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 1200" role="img" aria-label="Placeholder gastronomia">
+  <defs>
+    <radialGradient id="r" cx="40%" cy="35%" r="70%">
+      <stop offset="0%" stop-color="#370d17"/>
+      <stop offset="100%" stop-color="#1a1214"/>
+    </radialGradient>
+  </defs>
+  <rect width="900" height="1200" fill="url(#r)"/>
+  <ellipse cx="520" cy="780" rx="220" ry="90" fill="#c4b780" opacity="0.15"/>
+</svg>

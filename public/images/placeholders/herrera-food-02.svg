@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 900" role="img" aria-label="Placeholder gastronomia">
+  <rect width="1600" height="900" fill="#370d17"/>
+  <rect x="0" y="520" width="1600" height="380" fill="#1a1214" opacity="0.65"/>
+  <line x1="200" y1="640" x2="1400" y2="640" stroke="#c4b780" stroke-width="1" opacity="0.35"/>
+</svg>

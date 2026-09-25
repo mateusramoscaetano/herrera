@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 1200" role="img" aria-label="Placeholder evento">
+  <defs>
+    <linearGradient id="g" x1="0%" y1="100%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#1a1214"/>
+      <stop offset="60%" stop-color="#370d17"/>
+      <stop offset="100%" stop-color="#1a1214"/>
+    </linearGradient>
+  </defs>
+  <rect width="900" height="1200" fill="url(#g)"/>
+  <path d="M0 800 Q450 680 900 820 L900 1200 L0 1200 Z" fill="#c4b780" opacity="0.12"/>
+</svg>

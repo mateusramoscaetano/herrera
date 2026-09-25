@@ -1,26 +1,92 @@
 @import "tailwindcss";
 
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  --color-olive: #636341;
+  --color-sage: #93a29f;
+  --color-wine: #370d17;
+  --color-gold: #c4b780;
+  --color-cream: #e5e2d3;
+  --color-ink: #1a1214;
+  --header-height: 4.5rem;
 }
 
 @theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+  --color-olive: var(--color-olive);
+  --color-sage: var(--color-sage);
+  --color-wine: var(--color-wine);
+  --color-gold: var(--color-gold);
+  --color-cream: var(--color-cream);
+  --color-ink: var(--color-ink);
+  --color-black: var(--color-ink);
+  --color-burgundy: var(--color-wine);
+  --color-off-white: var(--color-cream);
+  --font-serif: var(--font-libre-bodoni);
+  --font-sans: var(--font-montserrat);
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+html {
+  scroll-behavior: smooth;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
   }
 }
 
 body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  background: var(--color-ink);
+  color: var(--color-cream);
+  font-family: var(--font-montserrat), system-ui, sans-serif;
+}
+
+::selection {
+  background: color-mix(in srgb, var(--color-gold) 35%, transparent);
+  color: var(--color-cream);
+}
+
+[data-text-reveal="words"] [data-word] {
+  display: inline-block;
+}
+
+[data-reveal] {
+  opacity: 1;
+  transform: none;
+}
+
+[data-image-reveal] img {
+  transform: scale(1);
+}
+
+[data-horizontal-scroll] {
+  scrollbar-width: thin;
+  scrollbar-color: color-mix(in srgb, var(--color-gold) 40%, transparent) transparent;
+}
+
+.section-bleed-overlap {
+  margin-top: clamp(-4rem, -8vw, -7rem);
+  position: relative;
+  z-index: 2;
+}
+
+.bg-brand-linen {
+  background-color: var(--color-cream);
+  background-image: radial-gradient(
+      ellipse 120% 80% at 10% 0%,
+      color-mix(in srgb, var(--color-sage) 18%, transparent),
+      transparent 55%
+    ),
+    linear-gradient(
+      180deg,
+      color-mix(in srgb, var(--color-cream) 96%, white),
+      var(--color-cream)
+    );
 }

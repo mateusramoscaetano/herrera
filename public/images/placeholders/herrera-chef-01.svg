@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 1200" role="img" aria-label="Placeholder chef">
+  <linearGradient id="g" x1="0" y1="0" x2="0" y2="1">
+    <stop offset="0%" stop-color="#1a1214"/>
+    <stop offset="100%" stop-color="#370d17"/>
+  </linearGradient>
+  <rect width="900" height="1200" fill="url(#g)"/>
+  <rect x="60" y="200" width="780" height="900" fill="#e5e2d3" opacity="0.03"/>
+  <text x="450" y="1100" text-anchor="middle" fill="#c4b780" font-family="Georgia, serif" font-size="28" opacity="0.5">HERRERA</text>
+</svg>

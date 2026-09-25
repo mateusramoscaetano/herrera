@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 1000" role="img" aria-label="Placeholder evento">
+  <rect width="1000" height="1000" fill="#1a1214"/>
+  <rect x="120" y="120" width="760" height="760" fill="none" stroke="#e5e2d3" stroke-width="1" opacity="0.2"/>
+  <circle cx="500" cy="500" r="180" fill="#370d17"/>
+</svg>
