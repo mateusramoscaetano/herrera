@@ -6,6 +6,7 @@ import { prefersReducedMotion } from "@/lib/animations"
 
 interface EditorialVideoProps {
   src: string
+  fallbackSrc?: string
   poster: string
   label: string
   className?: string
@@ -14,6 +15,7 @@ interface EditorialVideoProps {
 
 export function EditorialVideo({
   src,
+  fallbackSrc,
   poster,
   label,
   className = "",
@@ -59,7 +61,7 @@ export function EditorialVideo({
       <video
         ref={videoRef}
         className="absolute inset-0 h-full w-full object-cover"
-        src={src}
+        src={fallbackSrc ? undefined : src}
         poster={poster}
         muted
         loop
@@ -67,7 +69,14 @@ export function EditorialVideo({
         autoPlay
         preload="auto"
         aria-label={label}
-      />
+      >
+        {fallbackSrc ? (
+          <>
+            <source src={src} type="video/webm" />
+            <source src={fallbackSrc} type="video/mp4" />
+          </>
+        ) : null}
+      </video>
       <Image
         src={poster}
         alt=""
