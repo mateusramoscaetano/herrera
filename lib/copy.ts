@@ -9,12 +9,9 @@ export const copy = {
     cta: "Solicitar proposta",
   },
   manifesto: {
-    headlineWords: [
-      "Gastronomia ",
-      "pensada ",
-      "para ",
-      "seu ",
-      "evento.",
+    headlineLines: [
+      ["Gastronomia", "pensada."],
+      ["para", "seu", "evento"],
     ],
     body: [
       "A Herrera é uma empresa de catering e",

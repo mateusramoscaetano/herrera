@@ -92,13 +92,17 @@ export function Manifesto() {
           dataReveal="words"
           className="max-w-5xl font-serif text-[clamp(2rem,5.5vw,4.25rem)] leading-[1.05]"
         >
-          {manifesto.headlineWords.map((word, index) => (
-            <Fragment key={index}>
-              <span data-word className="uppercase">
-                {word}
-              </span>
-              {" "}
-            </Fragment>
+          {manifesto.headlineLines.map((line, lineIndex) => (
+            <span key={lineIndex} className="block">
+              {line.map((word, wordIndex) => (
+                <Fragment key={`${lineIndex}-${wordIndex}`}>
+                  <span data-word className="uppercase">
+                    {word}
+                  </span>
+                  {wordIndex < line.length - 1 ? " " : ""}
+                </Fragment>
+              ))}
+            </span>
           ))}
         </TextReveal>
 
