@@ -30,7 +30,7 @@ export function EditorialGallery() {
       dataSection="gallery"
       ariaLabelledBy="gallery-heading"
     >
-      <div className="mx-auto max-w-[1400px] px-3 md:px-4">
+      <div className="mx-auto max-w-350 px-3 md:px-4">
         <div className="mb-6 px-3 md:px-2">
           <SectionLabel tone="light">{gallery.label}</SectionLabel>
           <h2

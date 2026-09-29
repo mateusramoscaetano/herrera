@@ -17,7 +17,7 @@ export function FinalCTA() {
         aria-hidden="true"
       />
 
-      <div className="relative mx-auto max-w-[1400px]">
+      <div className="relative mx-auto max-w-350">
         <h2 className="max-w-4xl font-serif text-[clamp(2.5rem,7vw,5.5rem)] leading-[0.95]">
           {cta.titleLine1}
           <br />
@@ -28,15 +28,20 @@ export function FinalCTA() {
           <span className="text-gold">{cta.titleAccent}</span>
         </h2>
 
-        <div className="mt-14 flex flex-col gap-8 md:mt-20 md:flex-row md:items-center md:gap-12">
+        <div className='flex flex-col mt-2 md:mt-10 items-start'>
+         <span> Conte para a Herrera o que você está planejando.</span>
+         <span> A partir da sua ideia, criamos a experiência gastronômica que faz sentido para o seu evento.</span>
+        </div>
+
+        <div className="mt-7 flex flex-col gap-8 md:mt-10 md:flex-row md:items-center md:gap-12">
           <MagneticButton href={site.whatsappHref} external>
-            {cta.button}
+            {"Falar com a Herrera"}
           </MagneticButton>
 
           <div className="space-y-2 font-sans text-sm text-cream/75">
             <a
               href={site.phoneHref}
-              className="block hover:text-cream focus-visible:outline focus-visible:outline-2 focus-visible:outline-gold"
+              className="block hover:text-cream focus-visible:outline-2 focus-visible:outline-gold"
             >
               {site.phone}
             </a>

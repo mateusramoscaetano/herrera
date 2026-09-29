@@ -43,6 +43,7 @@ export function BentoSection({
           gsap.from(items, {
             y: 56,
             autoAlpha: 0,
+            immediateRender: false,
             duration: 0.9,
             stagger: 0.07,
             ease: "power3.out",

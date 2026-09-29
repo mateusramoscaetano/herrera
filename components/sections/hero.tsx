@@ -6,6 +6,7 @@ import { EditorialVideo } from "@/components/ui/editorial-video"
 import { copy } from "@/lib/copy"
 import { heroVideo } from "@/lib/media"
 import { site } from "@/lib/site"
+import Image from "next/image"
 
 export function Hero() {
   const { hero } = copy
@@ -13,7 +14,7 @@ export function Hero() {
   return (
     <section
       id="inicio"
-      className="relative min-h-[100svh] overflow-hidden bg-ink text-cream"
+      className="relative overflow-hidden bg-ink text-cream"
       data-header-theme="dark"
       data-section="hero"
     >
@@ -25,25 +26,20 @@ export function Hero() {
         <div className="absolute bottom-20 right-0 h-96 w-96 rounded-full bg-wine blur-3xl" />
       </div>
 
-      <div className="relative mx-auto grid min-h-[100svh] max-w-[1400px] grid-cols-1 items-end gap-10 px-6 pb-20 pt-28 md:grid-cols-12 md:items-center md:gap-6 md:px-10 md:pb-24 md:pt-32">
+      <div className="relative mx-auto grid min-h-dvh max-w-350 grid-cols-1 items-end gap-10 px-6 pb-20 pt-25 md:grid-cols-12 md:items-center md:gap-6 md:px-10 md:pb-24 ">
         <div className="relative z-10 md:col-span-6 lg:col-span-5">
           <p className="mb-4 font-sans text-[0.65rem] tracking-[0.5em] text-cream/60">
             {hero.label}
           </p>
-          <p className="mb-10 font-sans text-[0.6rem] uppercase tracking-[0.45em] text-gold">
-            {hero.concept}
-          </p>
-          <h1 className="font-serif text-[clamp(2.25rem,7vw,4.75rem)] leading-[0.92] tracking-tight">
-            {hero.titleLine1}
-            <br />
-            {hero.titleLine2}
-            <br />
-            <span className="text-gold">{hero.titleAccent}</span>
+         
+          <h1 className="font-serif uppercase text-[clamp(2.25rem,7vw,4.75rem)] leading-[0.92] tracking-tight">
+          Gastronomia <br/> que faz parte da <br/> 
+            <span className="text-gold uppercase">experiência</span>
           </h1>
           <p className="mt-10 max-w-md font-sans text-sm leading-relaxed text-cream/75 md:text-base">
             {hero.subtitle}
             <br />
-            {site.tagline}
+            <span className="text-xs animate-bounce">Eventos sociais •  Corporativo  • Casamentos  • Celebrações</span>
           </p>
           <div className="mt-12">
             <MagneticButton href={site.proposalHref}>
@@ -56,7 +52,7 @@ export function Hero() {
           <Parallax speed={0.15} className="relative">
             <ImageReveal
               direction="left"
-              className="relative ml-auto aspect-[4/5] w-full max-w-[520px] md:aspect-[3/4] md:-mr-8 lg:max-w-[580px]"
+              className="relative ml-auto aspect-[4/5] w-full max-w-[520px] md:aspect-[3/4] md:-mr-8 lg:max-w-[400px]"
             >
               <div
                 className="absolute -inset-4 border border-gold/20 md:-inset-6"
@@ -70,6 +66,7 @@ export function Hero() {
               >
                 <EditorialVideo
                   src={heroVideo.src}
+                  fallbackSrc={heroVideo.fallbackSrc}
                   poster={heroVideo.poster}
                   label={heroVideo.label}
                   priority
@@ -82,11 +79,7 @@ export function Hero() {
             </ImageReveal>
           </Parallax>
 
-          <div
-            className="absolute -bottom-6 left-0 hidden h-32 w-32 border border-cream/15 md:block lg:-left-16"
-            aria-hidden="true"
-            data-hero-graphic
-          />
+       
         </div>
       </div>
 
@@ -94,7 +87,7 @@ export function Hero() {
         href="#manifesto"
         className="absolute bottom-8 left-1/2 flex -translate-x-1/2 flex-col items-center gap-2 font-sans text-[0.6rem] tracking-[0.35em] text-cream/50 transition-colors hover:text-cream focus-visible:outline focus-visible:outline-2 focus-visible:outline-gold"
       >
-        <span>Scroll</span>
+       
         <ChevronDown className="h-4 w-4 animate-pulse" aria-hidden="true" />
       </a>
     </section>

@@ -50,4 +50,10 @@ export const foodVideos = [
   },
 ] as const
 
-export const heroVideo = foodVideos[0]
+export const heroVideo = {
+  id: "hero",
+  src: "/images/placeholders/video--hero.webm",
+  fallbackSrc: "/images/placeholders/video--hero.mp4",
+  poster: "/images/placeholders/video--hero-poster.jpg",
+  label: "Experiência gastronômica Herrera",
+} as const

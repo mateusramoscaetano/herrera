@@ -17,7 +17,7 @@ export function CateringExperience() {
       dataHeaderTheme="light"
       dataSection="catering"
     >
-      <div className="mx-auto max-w-[1400px] px-3 md:px-4">
+      <div className="mx-auto max-w-350 px-3 md:px-4">
         <div className="mb-6 px-3 md:px-2">
           <SectionLabel tone="dark">{catering.label}</SectionLabel>
           <h2 className="mt-4 max-w-2xl font-serif text-[clamp(2.25rem,5vw,3.75rem)] leading-none">

@@ -11,7 +11,7 @@ export function Chef() {
   return (
     <section
       id="chef"
-      className="relative min-h-[100svh] overflow-hidden bg-ink text-cream"
+      className="relative min-h-svh overflow-hidden bg-ink text-cream"
       data-header-theme="dark"
       data-section="chef"
     >
@@ -43,7 +43,7 @@ export function Chef() {
         }}
       />
 
-      <div className="relative mx-auto flex min-h-[100svh] max-w-[1400px] flex-col justify-end px-6 pb-16 pt-32 md:justify-center md:px-10 md:pb-24 md:pt-28">
+      <div className="relative mx-auto flex min-h-svh max-w-350 flex-col justify-end px-6 pb-16 pt-32 md:justify-center md:px-10 md:pb-24 md:pt-28">
         <div className="max-w-xl md:max-w-2xl">
           <SectionLabel tone="gold">{chef.label}</SectionLabel>
           <h2 className="mt-6 font-serif text-[clamp(3.25rem,11vw,7rem)] leading-[0.88]">
@@ -72,6 +72,38 @@ export function Chef() {
           >
             {chef.signature}
           </p>
+
+          <div className=" ">
+           <h2 className='font-serif mt-10 text-cream text-xl uppercase'> Da Gastronomia aos grandes eventos.</h2>
+            <div className="grid grid-cols-1 md:grid-cols-2 mt-10  gap-10 font-sans">
+             <div className="text-sm col-span-1 gap-4 flex flex-col leading-relaxed text-cream">
+             <span>  A trajetória de Gabriel Herrera começa na gastronomia e encontra nos eventos o ponto de conexão entre as duas áreas. 
+                </span>
+                <span>  Em 2019, levou essa busca ainda mais longe no Bosque Culinary Center, em San Sebastián, na Espapanha. Foi também no país que aprofundou sua experiência em catering, com a Alabardero, onde vivenciou de perto a escala, a precisão e a complexidade que os grandes eventos exigem. 
+
+                </span>
+
+                <span>
+                Sua formação gastronômica teve inicio no Centro Europeu, em Curitiba, e passou pelas cozinhas do D.O.M e do Dalva e Dito, ao lado de Alex Atala, além do Buffet Capim Sato, com Morena Leite.
+
+                </span>
+              </div>
+              
+              <div className="text-sm col-span-1 gap-4 flex flex-col">
+                 <span>  
+                  De volta ao Brasil, atuou como sócio e chef executivo no Ópera Concept Hall e, posteriormente, na La Orana Gastronomia, participando da realização de centenas de eventos e atendendo milhares de convidados.
+                </span>
+                <span> 
+                  Agora à frente da HErrera, Gabriel inicia uma nova fase de sua trajetória.
+                </span>
+
+                <span>
+                  Uma marca que reúne sua experiência em gastronomia, gestão e eventos para criar experiências gastronômicas à altura de cada ocasião, respeitando sua escala, seu contexto e, principalmente, sua singularidade.
+                </span>
+              </div>
+            </div>
+
+          </div>
 
           <div className="mt-12">
             <MagneticButton href={site.proposalHref} variant="outline">

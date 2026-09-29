@@ -8,7 +8,7 @@ export function Footer() {
       className="border-t border-cream/10 bg-ink px-6 py-16 text-cream md:px-10"
       data-header-theme="dark"
     >
-      <div className="mx-auto flex max-w-[1400px] flex-col gap-12 md:flex-row md:items-end md:justify-between">
+      <div className="mx-auto flex max-w-350 flex-col gap-12 md:flex-row md:items-end md:justify-between">
         <div className="space-y-5">
           <div className="relative h-12 w-12 overflow-hidden rounded-sm">
             <Image
@@ -21,7 +21,7 @@ export function Footer() {
           </div>
           <p className="font-serif text-2xl md:text-3xl">Herrera Gastronomia</p>
           <p className="max-w-md font-sans text-sm leading-relaxed text-cream/70">
-            {site.tagline}
+            {'Eventos sociais • Corporativo • Casamentos • Celebrações'}
             <br />
             {site.chef}
           </p>
@@ -33,7 +33,7 @@ export function Footer() {
             href={site.instagramHref}
             target="_blank"
             rel="noopener noreferrer"
-            className="hover:text-cream focus-visible:outline focus-visible:outline-2 focus-visible:outline-gold"
+            className="hover:text-cream  focus-visible:outline-2 focus-visible:outline-gold"
           >
             {site.instagram}
           </a>
@@ -41,13 +41,13 @@ export function Footer() {
             href={site.whatsappHref}
             target="_blank"
             rel="noopener noreferrer"
-            className="hover:text-cream focus-visible:outline focus-visible:outline-2 focus-visible:outline-gold"
+            className="hover:text-cream  focus-visible:outline-2 focus-visible:outline-gold"
           >
             WhatsApp — {site.phone}
           </a>
           <a
             href={site.phoneHref}
-            className="hover:text-cream focus-visible:outline focus-visible:outline-2 focus-visible:outline-gold"
+            className="hover:text-cream  focus-visible:outline-2 focus-visible:outline-gold"
           >
             {site.phone}
           </a>
@@ -55,7 +55,7 @@ export function Footer() {
         </div>
       </div>
 
-      <p className="mx-auto mt-16 max-w-[1400px] font-sans text-[0.65rem] tracking-[0.2em] text-cream/40">
+      <p className="mx-auto mt-16 max-w-350 font-sans text-[0.65rem] tracking-[0.2em] text-cream/40">
         © {new Date().getFullYear()} {site.name}. Todos os direitos reservados.
       </p>
     </footer>

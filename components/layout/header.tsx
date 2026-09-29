@@ -53,7 +53,7 @@ export function Header() {
           : "bg-transparent"
       } ${isLightHeader && isScrolled ? "border-ink/10 bg-cream/85" : ""}`}
     >
-      <div className="mx-auto flex h-16 max-w-[1400px] items-center justify-between px-6 md:h-[4.5rem] md:px-10">
+      <div className="relative z-50 mx-auto flex h-16 max-w-[1400px] items-center justify-between px-6 md:h-[4.5rem] md:px-10">
         <div className="flex items-center gap-3">
           <HerreraLogo variant={isLightHeader ? "light" : "dark"} />
           <Link
@@ -118,9 +118,9 @@ export function Header() {
             onClick={() => setIsMenuOpen((open) => !open)}
           >
             {isMenuOpen ? (
-              <X className="h-5 w-5" aria-hidden="true" />
+              <X color="#fff" className="h-5 w-5"  />
             ) : (
-              <Menu className="h-5 w-5" aria-hidden="true" />
+              <Menu className="h-5 w-5"  />
             )}
           </button>
         </div>
@@ -134,7 +134,7 @@ export function Header() {
         aria-hidden={!isMenuOpen}
       >
         <nav
-          className="flex h-full flex-col justify-center gap-8 px-10 pt-20"
+          className="flex min-h-dvh flex-col bg-wine gap-8 px-10 pt-20"
           aria-label="Mobile"
         >
           {navItems.map((item) => (

@@ -10,21 +10,25 @@ export const copy = {
   },
   manifesto: {
     headlineWords: [
-      "Todo",
-      "evento",
-      "tem",
-      "uma",
-      "linguagem",
-      "própria.",
+      "Gastronomia ",
+      "pensada ",
+      "para ",
+      "seu ",
+      "evento.",
     ],
     body: [
-      "E faz a gastronomia falar essa mesma língua.",
-      "Não adaptamos o evento à gastronomia.",
-      "Adaptamos a gastronomia ao evento.",
+      "A Herrera é uma empresa de catering e",
+      "produção gastronômica para eventos, criada",
+      "pelo Chef Gabriel Herrera",
     ],
-    closing:
-      "Uma gastronomia que não ocupa o evento, o completa.",
-    signature: "A Herrera entende isso.",
+    body2: [
+      "Criamos menus, estruturamos operações e",
+      "executamos experiências gastronômicas que",
+      "conversam com o perfil de cada eventos, do",
+      "primeiro conceito ao ultimo serviço.",
+    ],
+   
+    signature: "Criação  • Gastronomia •  Produção •  Serviço",
   },
   catering: {
     label: "Experiência",
@@ -42,7 +46,7 @@ export const copy = {
         id: "02",
         title: "RITMO",
         description: "Tem ritmo.",
-        imageKey: "food01",
+        imageKey: "detail01",
       },
       {
         id: "03",
@@ -58,6 +62,56 @@ export const copy = {
       },
     ],
   },
+  ourExperiences: {
+    label: "Portfólio",
+    titleLine1: "NOSSAS",
+    titleLine2: "EXPERIÊNCIAS",
+    lead: "",
+    items: [
+      {
+        id: "formaturas",
+        title: "Formaturas",
+        description:
+          "Gastronomia pensada para acompanhar cada momento da celebração, da recepção ao jantar, com menus e formatos de serviço personalizados para grandes eventos.",
+        imageKey: "event01",
+      },
+      {
+        id: "eventos-corporativos",
+        title: "Eventos corporativos",
+        description:
+          "Soluções gastronômicas para encontros, confraternizações, lançamentos, convenções e experiências de marca, com operação adequada a cada formato.",
+        imageKey: "event02",
+      },
+      {
+        id: "coffee-breaks",
+        title: "Coffee breaks",
+        description:
+          "Uma pausa que também faz parte da experiência. Menus pensados para reuniões, eventos, treinamentos e encontros corporativos.",
+        imageKey: "food01",
+      },
+      {
+        id: "casamentos",
+        title: "Casamentos & celebrações",
+        description:
+          "Menus autorais e serviço completo para casamentos, aniversários, jantares e celebrações especiais.",
+        imageKey: "event03",
+      },
+      {
+        id: "coqueteis",
+        title: "Coquetéis & recepções",
+        description:
+          "Finger foods, bebidas e serviço pensados para receber convidados com leveza, praticidade e apresentação.",
+        imageKey: "food02",
+      },
+      {
+        id: "personalizados",
+        title: "Eventos personalizados",
+        description:
+          "Quando o formato não cabe em uma categoria. A Herrera desenvolve a solução gastronômica de acordo com a proposta, público e dinâmica de cada evento.",
+        imageKey: "chef01",
+      },
+    ],
+  },
   gallery: {
     label: "Galeria editorial",
     titleLine1: "Sensibilidade estética",
@@ -67,42 +121,31 @@ export const copy = {
   events: {
     label: "Eventos",
     items: [
-      {
-        id: "linguagem",
-        title: "LINGUAGEM",
-        quote: "Todo evento tem uma linguagem própria.",
-        imageKey: "event01",
-      },
-      {
-        id: "ritmo",
-        title: "RITMO",
-        quote: "Tem ritmo.",
-        imageKey: "backstage01",
-      },
+    
       {
         id: "clima",
-        title: "CLIMA",
-        quote: "Tem clima.",
+        title: "ESCUTA",
+        quote: "Entender o evento, o público e a intenção",
         imageKey: "food02",
       },
       {
         id: "intencao",
-        title: "INTENÇÃO",
-        quote: "Tem intenção.",
-        imageKey: "food01",
+        title: "AUTORIA",
+        quote: "Criar uma proposta gastronômica própria.",
+        imageKey: "detail02",
       },
       {
         id: "tecnica",
         title: "TÉCNICA",
-        quote: "Isso exige técnica.",
+        quote: "Transformar a ideia em uma operação possível e precisa.",
         imageKey: "chef01",
       },
       {
         id: "compoe",
-        title: "COMPÕE",
+        title: "EXECUÇÃO",
         quote:
-          "Uma gastronomia que surpreende, que compõe, que deixa marca.",
-        imageKey: "event02",
+          "Fazer tudo acontecer no evento, com consistência",
+        imageKey: "team01",
       },
     ],
   },

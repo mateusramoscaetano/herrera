@@ -24,21 +24,21 @@ export function Events() {
       dataHeaderTheme="light"
       dataSection="events"
     >
-      <div className="mx-auto max-w-[1400px] px-3 md:px-4">
+      <div className="mx-auto max-w-350 px-3 md:px-4">
         <div className="mb-6 px-3 md:px-2">
           <SectionLabel tone="dark">{events.label}</SectionLabel>
           <h2 className="mt-4 font-serif text-[clamp(2rem,4vw,3.25rem)] leading-tight">
-            Todo evento tem
+           Cada evento pede uma
             <br />
-            <span className="text-wine">uma linguagem própria.</span>
+            <span className="text-wine">gastronomia diferente.</span>
           </h2>
         </div>
 
-        <div className="grid grid-cols-12 gap-1.5 md:gap-2">
+        <div className="flex gap-1.5 md:gap-2 flex-col md:flex-row">
           {events.items.map((item, index) => (
             <BentoTile
               key={item.id}
-              span={eventSpans[index] ?? "col-span-12 min-h-[240px]"}
+              span={eventSpans[index]  ?? "col-span-12 min-h-[240px]"}
               imageKey={item.imageKey}
               title={item.title}
               subtitle={item.quote}

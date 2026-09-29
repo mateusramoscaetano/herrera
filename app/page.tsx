@@ -10,6 +10,7 @@ import { Chef } from "@/components/sections/chef"
 import { Process } from "@/components/sections/process"
 import { Services } from "@/components/sections/services"
 import { FinalCTA } from "@/components/sections/final-cta"
+import { OurExperiences } from "@/components/sections/our-experiences"
 
 export default function Home() {
   return (
@@ -19,11 +20,11 @@ export default function Home() {
         <Hero />
         <Manifesto />
         <CateringExperience />
-        <EditorialGallery />
+        <OurExperiences />
+       
         <Events />
         <Chef />
-        <Process />
-        <Services />
+       
         <FinalCTA />
       </main>
       <Footer />
