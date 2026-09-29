@@ -46,7 +46,7 @@ export function Manifesto() {
       data-header-theme="light"
       data-section="manifesto"
     >
-      <div className="hidden md:block absolute bottom-20 right-30">
+      <div className="hidden md:block absolute bottom-20 right-0 xl:right-30">
           <img
             className="   h-32 w-32 border border-cream/15 md:block "
             aria-hidden="true"
@@ -134,7 +134,7 @@ export function Manifesto() {
        </div>
 
         
-        <p className=" absolute bottom-20 font-serif  tracking-wider italic text-gold md:text-3xl">
+        <p className=" absolute bottom-20 font-serif  tracking-wider italic text-wine md:text-3xl">
           {manifesto.signature}
         </p>
       </div>

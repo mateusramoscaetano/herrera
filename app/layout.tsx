@@ -2,22 +2,11 @@ import localFont from "next/font/local"
 import { Montserrat } from "next/font/google"
 import { Metadata } from "next"
 import { ReactNode } from "react"
-import { brandLogo } from "@/lib/media"
 import "./globals.css"
 
 const bigilla = localFont({
-  src: [
-    {
-      path: "./fonts/Bigilla.otf",
-      weight: "400",
-      style: "normal",
-    },
-    {
-      path: "./fonts/Bigilla-Bold.otf",
-      weight: "700",
-      style: "normal",
-    },
-  ],
+  src: "./fonts/Bigilla-Bold.otf",
+  weight: "700",
   variable: "--font-bigilla",
   display: "swap",
 })
@@ -39,10 +28,6 @@ export const metadata: Metadata = {
       "Catering • Eventos • Do conceito à execução. Feito pelo Chef Gabriel Herrera.",
     locale: "pt_BR",
     type: "website",
-  },
-  icons: {
-    icon: brandLogo.onDark,
-    apple: brandLogo.onDark,
   },
 }
 
