@@ -11,6 +11,7 @@ interface EditorialVideoProps {
   label: string
   className?: string
   priority?: boolean
+  mediaScale?: number
 }
 
 export function EditorialVideo({
@@ -20,7 +21,13 @@ export function EditorialVideo({
   label,
   className = "",
   priority = false,
+  mediaScale,
 }: EditorialVideoProps) {
+  const mediaStyle = mediaScale
+    ? { transform: `scale(${mediaScale})` }
+    : undefined
+  const mediaClassName =
+    "absolute inset-0 h-full w-full origin-center object-cover"
   const videoRef = useRef<HTMLVideoElement>(null)
   const [isPlaying, setIsPlaying] = useState(false)
 
@@ -60,7 +67,8 @@ export function EditorialVideo({
     <div className={`relative h-full w-full overflow-hidden ${className}`}>
       <video
         ref={videoRef}
-        className="absolute inset-0 h-full w-full object-cover"
+        className={mediaClassName}
+        style={mediaStyle}
         src={fallbackSrc ? undefined : src}
         poster={poster}
         muted
@@ -83,9 +91,10 @@ export function EditorialVideo({
         fill
         priority={priority}
         sizes="(max-width: 768px) 100vw, 45vw"
-        className={`pointer-events-none object-cover transition-opacity duration-1000 ${
+        className={`pointer-events-none transition-opacity duration-1000 ${mediaClassName} ${
           isPlaying ? "opacity-0" : "opacity-100"
         }`}
+        style={mediaStyle}
         aria-hidden="true"
       />
     </div>

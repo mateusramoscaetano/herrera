@@ -52,7 +52,7 @@ export function Hero() {
           <Parallax speed={0.15} className="relative">
             <ImageReveal
               direction="left"
-              className="relative ml-auto aspect-[4/5] w-full max-w-[520px] md:aspect-[3/4] md:-mr-8 lg:max-w-[400px]"
+              className="relative ml-auto aspect-video w-full max-w-[520px] md:max-w-[600px] md:-mr-8 lg:max-w-[680px]"
             >
               <div
                 className="absolute -inset-4 border border-gold/20 md:-inset-6"
@@ -70,6 +70,7 @@ export function Hero() {
                   poster={heroVideo.poster}
                   label={heroVideo.label}
                   priority
+                  mediaScale={1.27}
                 />
                 <div
                   className="pointer-events-none absolute inset-0 bg-gradient-to-t from-black/70 via-transparent to-black/20"
