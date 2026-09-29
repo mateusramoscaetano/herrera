@@ -8,7 +8,7 @@ export const brandColors = {
 } as const
 
 export const brandFonts = {
-  display: "Libre Bodoni",
+  display: "Bigilla",
   ui: "Montserrat",
   note:
     "Logo HERRERA usa lettering custom (H caligráfico + serif de alto contraste). Tipografias web aproximam títulos editoriais e UI do deck.",

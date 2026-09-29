@@ -1,12 +1,23 @@
-import { Libre_Bodoni, Montserrat } from "next/font/google"
+import localFont from "next/font/local"
+import { Montserrat } from "next/font/google"
 import { Metadata } from "next"
 import { ReactNode } from "react"
 import "./globals.css"
 
-const libreBodoni = Libre_Bodoni({
-  variable: "--font-libre-bodoni",
-  subsets: ["latin"],
-  weight: ["400", "500", "600", "700"],
+const bigilla = localFont({
+  src: [
+    {
+      path: "./fonts/Bigilla.otf",
+      weight: "400",
+      style: "normal",
+    },
+    {
+      path: "./fonts/Bigilla-Bold.otf",
+      weight: "700",
+      style: "normal",
+    },
+  ],
+  variable: "--font-bigilla",
   display: "swap",
 })
 
@@ -34,7 +45,7 @@ export default function RootLayout({ children }: { children: ReactNode }) {
   return (
     <html
       lang="pt-BR"
-      className={`${libreBodoni.variable} ${montserrat.variable} h-full antialiased`}
+      className={`${bigilla.variable} ${montserrat.variable} h-full antialiased`}
     >
       <body className="min-h-full font-sans">{children}</body>
     </html>
