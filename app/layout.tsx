@@ -2,6 +2,7 @@ import localFont from "next/font/local"
 import { Montserrat } from "next/font/google"
 import { Metadata } from "next"
 import { ReactNode } from "react"
+import { brandLogo } from "@/lib/media"
 import "./globals.css"
 
 const bigilla = localFont({
@@ -38,6 +39,10 @@ export const metadata: Metadata = {
       "Catering • Eventos • Do conceito à execução. Feito pelo Chef Gabriel Herrera.",
     locale: "pt_BR",
     type: "website",
+  },
+  icons: {
+    icon: brandLogo.onDark,
+    apple: brandLogo.onDark,
   },
 }
 
